@@ -4,6 +4,7 @@ import sys
 import time
 from typewriter import typewriter
 from loading_bar import loading_bar
+from effects import typewriter_with_sound
 
 
 def clear():
@@ -43,18 +44,19 @@ time.sleep(1)
 clear()
 
 time.sleep(5)
+print("???:",end=" ")
 typewriter("“You have wandered too far, mortal soul…”")
 time.sleep(1)
 input()
 clear()
 
-typewriter("(A faint light shimmers, forming a celestial figure.)")
+typewriter_with_sound("(A faint light shimmers, forming a celestial figure.)",sound_file="type.wav", delay=0.05)
 time.sleep(1)
 input()
 clear()
 
 print("Goddess:",end=" ")
-typewriter("“Once, I offered you mercy. But mercy was not enough to change your fate.”")
+typewriter("“Once, I offered you mercy. But mercy was not enough to change your fate.”",)
 time.sleep(1)
 input()
 clear()
